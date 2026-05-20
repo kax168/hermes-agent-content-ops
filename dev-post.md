@@ -57,6 +57,16 @@ Approved video links are appended to:
 
 The important design choice: Hermes automates the repeatable operational work, but it does not pretend to verify things it cannot safely verify. For videos, "no Chinese narration" and "no more than 10 Chinese characters on screen" need visual/audio review, so the system creates the queue and saves only manually approved links.
 
+### Validation From My Local Build
+
+The private local deployment has been tested end-to-end with real scheduled jobs and real WeChat draft creation. I am not publishing account credentials, access tokens, draft media IDs, or screenshots that expose private account metadata, but the workflow is designed around concrete success checks:
+
+- Hermes cron has two active daily article jobs: morning and evening.
+- A successful WeChat run must produce `article.md`, `article.html`, `article.json`, `topic_research.md`, `image_plan.md`, and `cover.png`.
+- The WeChat API call must return a real draft result; otherwise the run is considered failed.
+- The Xiaohongshu workflow creates review queues but does not auto-save links without human verification.
+- The public repo contains sanitized runnable samples so the architecture can be reviewed without leaking secrets.
+
 ## Code
 
 Repository: [github.com/kax168/hermes-agent-content-ops](https://github.com/kax168/hermes-agent-content-ops)
@@ -144,6 +154,15 @@ That hybrid design made the system more useful:
 The Xiaohongshu workflow is deliberately semi-automatic. It searches for pet-supplies affiliate video candidates and prepares a review queue, but final saving requires manual confirmation.
 
 That is not a limitation I wanted to hide. It is a product decision. If the rule says "no Chinese narration" and "almost no Chinese on-screen text," then silently adding links without checking would produce bad data. Hermes is still useful because it removes the repetitive search/setup work while preserving the judgment step.
+
+## Why This Fits the Judging Criteria
+
+The Build With Hermes Agent prompt is judged on effective use of Hermes Agent's agentic capabilities, technical implementation and code quality, creativity and originality, and usability/user experience. Here is how I designed for those points:
+
+- **Agentic capabilities:** Hermes is used for persistent skills, scheduled execution, workflow memory, tool/API orchestration, and delivery reporting.
+- **Technical implementation:** Fragile steps are handled by deterministic scripts, credentials stay in environment files, generated artifacts are inspectable, and API success is verified instead of assumed.
+- **Creativity:** The project applies an open agent to a real media-operations workflow across WeChat and Xiaohongshu, not a generic assistant demo.
+- **Usability:** The system defaults to draft creation instead of risky auto-publishing, keeps failures debuggable, and uses human review where automation would be unsafe.
 
 ## What Makes This Useful
 

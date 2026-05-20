@@ -84,9 +84,15 @@ A successful run only counts if the WeChat API returns a real draft media ID. Ot
 
 The Build With Hermes Agent prompt asks for something useful or creative where Hermes performs real work at the heart of the project. This build uses Hermes as the operating layer for a recurring content business workflow: planning, tool use, memory, scheduling, API execution, and status reporting.
 
+## Judging Criteria Mapping
+
+- Effective use of Hermes Agent's agentic capabilities: persistent skill instructions, cron execution, context memory, tool use, API orchestration, and reporting.
+- Technical implementation and code quality: deterministic scripts for fragile operations, environment-based secrets, inspectable artifacts, and explicit success/failure checks.
+- Creativity and originality: a content-operations agent for WeChat plus a Xiaohongshu product-video research queue.
+- Usability and user experience: safe draft-first publishing, redacted/public samples, human-in-the-loop review for ambiguous media checks, and simple output folders for debugging.
+
 ## Files In This Submission Package
 
 - `dev-post.md`: English DEV article draft using the challenge template.
 - `architecture.mmd`: Mermaid architecture diagram source.
 - `submission-checklist.md`: Steps before publishing the DEV submission.
-
