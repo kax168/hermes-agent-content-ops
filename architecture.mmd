@@ -1,0 +1,16 @@
+flowchart TD
+    A["Hermes Agent<br/>gateway + cron"] --> B["Account strategy skill<br/>positioning, topic rules, safety"]
+    A --> C["07:00 morning job"]
+    A --> D["18:00 evening job"]
+    C --> E["Fresh topic research<br/>news, HN, tool updates"]
+    D --> E
+    E --> F["Article generation<br/>configured model provider"]
+    F --> G["WeChat-safe HTML layout<br/>cards, sections, CTA"]
+    G --> H["Local visual system<br/>cover.png + info cards"]
+    H --> I["Article package<br/>md, html, json, research, image plan"]
+    I --> J["WeChat Official Account API<br/>draft/add"]
+    J --> K["Official Account draft box"]
+    A --> L["Daily Xiaohongshu queue"]
+    L --> M["Human verification<br/>no Chinese narration, <=10 Chinese chars"]
+    M --> N["Approved links.txt"]
+
