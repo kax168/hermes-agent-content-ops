@@ -6,6 +6,8 @@ tags: hermesagentchallenge, devchallenge, agents
 
 *This is a submission for the [Hermes Agent Challenge](https://dev.to/challenges/hermes-agent-2026-05-15).*
 
+![Hermes Agent Content Ops hero](https://raw.githubusercontent.com/kax168/hermes-agent-content-ops/main/assets/hero.svg)
+
 ## What I Built
 
 I built a Hermes-powered content operations system for a Chinese WeChat Official Account focused on AI tools, cross-border monetization, content going global, and practical AI workflows.
@@ -25,6 +27,8 @@ The account publishes one article at 7:00 AM and another at 6:00 PM. The morning
 I also added a second operational workflow: a daily Xiaohongshu research queue for pet-supplies affiliate videos. It prepares search targets and review files, but intentionally keeps the final approval human-in-the-loop because the acceptance criteria require audio and on-screen text judgment.
 
 ## Demo
+
+![Hermes Agent Content Ops architecture](https://raw.githubusercontent.com/kax168/hermes-agent-content-ops/main/assets/architecture.svg)
 
 The WeChat pipeline produces a complete local article package for each run:
 
