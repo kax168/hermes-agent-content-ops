@@ -10,7 +10,7 @@
 
 ## Before Publishing
 
-- Replace `TODO: repo link` in `dev-post.md` with a public GitHub repo or gist link.
+- Confirm the public repository link in `dev-post.md` is correct.
 - Add screenshots or a short demo video if possible:
   - Hermes cron list or run log with secrets hidden.
   - Generated `article.html` preview.
@@ -29,4 +29,3 @@
   - Show the generated article package.
   - Show WeChat draft result.
 - Add a small public demo repository containing sanitized scripts and setup notes.
-

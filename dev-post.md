@@ -59,7 +59,7 @@ The important design choice: Hermes automates the repeatable operational work, b
 
 ## Code
 
-Repository: TODO: add public repo link
+Repository: [github.com/kax168/hermes-agent-content-ops](https://github.com/kax168/hermes-agent-content-ops)
 
 The private installation contains:
 
@@ -173,4 +173,3 @@ I would like to add:
 - multi-platform repurposing from one article package to X/Twitter, LinkedIn, and short-video scripts.
 
 The biggest takeaway: the best agent projects are often not magic demos. They are workflows where the agent keeps showing up, on schedule, doing the boring parts correctly.
-
