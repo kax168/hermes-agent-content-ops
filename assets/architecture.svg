@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600" role="img" aria-labelledby="title desc">
   <title id="title">Hermes Agent Content Ops architecture</title>
-  <desc id="desc">Architecture diagram for a Hermes Agent workflow that schedules WeChat article drafts and Xiaohongshu review queues.</desc>
+  <desc id="desc">A square architecture diagram for a Hermes Agent content operations system.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f8fafc"/>
@@ -10,86 +10,65 @@
       <stop offset="0" stop-color="#0f172a"/>
       <stop offset="1" stop-color="#134e4a"/>
     </linearGradient>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
       <path d="M0 0L10 5L0 10Z" fill="#0f766e"/>
     </marker>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.12"/>
-    </filter>
   </defs>
-  <rect width="1600" height="1050" fill="url(#bg)"/>
-  <text x="90" y="105" fill="#0f172a" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="56" font-weight="850">Hermes Agent Content Ops Architecture</text>
-  <text x="90" y="154" fill="#475569" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="26">Scheduled agentic workflow: research, generate, package, verify, and draft safely.</text>
+  <rect width="1600" height="1600" fill="url(#bg)"/>
+  <text x="120" y="150" fill="#0f172a" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="68" font-weight="850">Hermes Agent Content Ops</text>
+  <text x="120" y="205" fill="#475569" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="30">Research, generate, package, verify, and draft safely.</text>
 
   <g font-family="Avenir Next, Helvetica, Arial, sans-serif">
-    <g transform="translate(90 230)" filter="url(#shadow)">
-      <rect width="310" height="150" rx="28" fill="url(#dark)"/>
-      <text x="32" y="58" fill="#67e8f9" font-size="22" font-weight="800">Hermes Agent</text>
-      <text x="32" y="96" fill="#f8fafc" font-size="24" font-weight="750">Gateway + cron</text>
-      <text x="32" y="126" fill="#cbd5e1" font-size="17">Persistent skills and schedules</text>
-    </g>
+    <rect x="125" y="315" width="410" height="185" rx="36" fill="url(#dark)"/>
+    <text x="170" y="385" fill="#67e8f9" font-size="30" font-weight="850">Hermes Agent</text>
+    <text x="170" y="430" fill="#f8fafc" font-size="34" font-weight="850">Gateway + cron</text>
+    <text x="170" y="468" fill="#cbd5e1" font-size="21">persistent skills and schedules</text>
 
-    <g transform="translate(500 180)" filter="url(#shadow)">
-      <rect width="300" height="118" rx="24" fill="#ffffff" stroke="#99f6e4"/>
-      <text x="28" y="52" fill="#0f172a" font-size="24" font-weight="800">07:00 Morning</text>
-      <text x="28" y="84" fill="#64748b" font-size="18">tutorials, tools, how-to</text>
-    </g>
-    <g transform="translate(500 340)" filter="url(#shadow)">
-      <rect width="300" height="118" rx="24" fill="#ffffff" stroke="#99f6e4"/>
-      <text x="28" y="52" fill="#0f172a" font-size="24" font-weight="800">18:00 Evening</text>
-      <text x="28" y="84" fill="#64748b" font-size="18">trends, reviews, opinion</text>
-    </g>
+    <rect x="700" y="285" width="380" height="140" rx="30" fill="#ffffff" stroke="#99f6e4" stroke-width="2"/>
+    <text x="745" y="345" fill="#0f172a" font-size="34" font-weight="850">07:00 Morning</text>
+    <text x="745" y="385" fill="#64748b" font-size="23">tutorials, tools, how-to</text>
 
-    <g transform="translate(905 260)" filter="url(#shadow)">
-      <rect width="300" height="150" rx="28" fill="#ffffff" stroke="#67e8f9"/>
-      <text x="28" y="54" fill="#0f172a" font-size="24" font-weight="800">Topic Research</text>
-      <text x="28" y="88" fill="#64748b" font-size="18">news, HN, tool updates</text>
-      <text x="28" y="118" fill="#64748b" font-size="18">candidate scoring</text>
-    </g>
+    <rect x="700" y="485" width="380" height="140" rx="30" fill="#ffffff" stroke="#99f6e4" stroke-width="2"/>
+    <text x="745" y="545" fill="#0f172a" font-size="34" font-weight="850">18:00 Evening</text>
+    <text x="745" y="585" fill="#64748b" font-size="23">trends, reviews, opinion</text>
 
-    <g transform="translate(1295 260)" filter="url(#shadow)">
-      <rect width="230" height="150" rx="28" fill="#ffffff" stroke="#67e8f9"/>
-      <text x="28" y="54" fill="#0f172a" font-size="24" font-weight="800">Article Model</text>
-      <text x="28" y="88" fill="#64748b" font-size="18">configured provider</text>
-      <text x="28" y="118" fill="#64748b" font-size="18">structured JSON</text>
-    </g>
+    <rect x="1175" y="385" width="300" height="170" rx="32" fill="#ffffff" stroke="#67e8f9" stroke-width="2"/>
+    <text x="1218" y="450" fill="#0f172a" font-size="32" font-weight="850">Topic Research</text>
+    <text x="1218" y="490" fill="#64748b" font-size="22">news, HN, tools</text>
+    <text x="1218" y="525" fill="#64748b" font-size="22">candidate scoring</text>
 
-    <g transform="translate(210 585)" filter="url(#shadow)">
-      <rect width="310" height="150" rx="28" fill="#ffffff" stroke="#99f6e4"/>
-      <text x="28" y="54" fill="#0f172a" font-size="24" font-weight="800">WeChat HTML</text>
-      <text x="28" y="88" fill="#64748b" font-size="18">mobile-safe cards</text>
-      <text x="28" y="118" fill="#64748b" font-size="18">CTA, risk, visual modules</text>
-    </g>
+    <rect x="1175" y="705" width="300" height="170" rx="32" fill="#ffffff" stroke="#67e8f9" stroke-width="2"/>
+    <text x="1218" y="770" fill="#0f172a" font-size="32" font-weight="850">Article Model</text>
+    <text x="1218" y="810" fill="#64748b" font-size="22">provider configured</text>
+    <text x="1218" y="845" fill="#64748b" font-size="22">structured output</text>
 
-    <g transform="translate(635 585)" filter="url(#shadow)">
-      <rect width="310" height="150" rx="28" fill="#ffffff" stroke="#99f6e4"/>
-      <text x="28" y="54" fill="#0f172a" font-size="24" font-weight="800">Local Package</text>
-      <text x="28" y="88" fill="#64748b" font-size="18">md, html, json, cover</text>
-      <text x="28" y="118" fill="#64748b" font-size="18">inspectable artifacts</text>
-    </g>
+    <rect x="735" y="780" width="350" height="170" rx="32" fill="#ffffff" stroke="#99f6e4" stroke-width="2"/>
+    <text x="780" y="845" fill="#0f172a" font-size="32" font-weight="850">Local Package</text>
+    <text x="780" y="885" fill="#64748b" font-size="22">md, html, json, cover</text>
+    <text x="780" y="920" fill="#64748b" font-size="22">inspectable artifacts</text>
 
-    <g transform="translate(1060 585)" filter="url(#shadow)">
-      <rect width="310" height="150" rx="28" fill="#ffffff" stroke="#99f6e4"/>
-      <text x="28" y="54" fill="#0f172a" font-size="24" font-weight="800">WeChat API</text>
-      <text x="28" y="88" fill="#64748b" font-size="18">upload cover + article</text>
-      <text x="28" y="118" fill="#64748b" font-size="18">draft-first by default</text>
-    </g>
+    <rect x="265" y="780" width="350" height="170" rx="32" fill="#ffffff" stroke="#99f6e4" stroke-width="2"/>
+    <text x="310" y="845" fill="#0f172a" font-size="32" font-weight="850">WeChat HTML</text>
+    <text x="310" y="885" fill="#64748b" font-size="22">mobile-safe cards</text>
+    <text x="310" y="920" fill="#64748b" font-size="22">CTA, risk, modules</text>
 
-    <g transform="translate(500 825)" filter="url(#shadow)">
-      <rect width="600" height="118" rx="28" fill="#0f172a"/>
-      <text x="36" y="52" fill="#67e8f9" font-size="24" font-weight="800">Xiaohongshu Review Queue</text>
-      <text x="36" y="85" fill="#cbd5e1" font-size="18">Pet-supplies links require human audio/text verification before saving.</text>
-    </g>
+    <rect x="265" y="1085" width="350" height="170" rx="32" fill="#ffffff" stroke="#99f6e4" stroke-width="2"/>
+    <text x="310" y="1150" fill="#0f172a" font-size="32" font-weight="850">WeChat API</text>
+    <text x="310" y="1190" fill="#64748b" font-size="22">upload cover/article</text>
+    <text x="310" y="1225" fill="#64748b" font-size="22">draft-first by default</text>
 
-    <path d="M400 305H500" stroke="#0f766e" stroke-width="4" marker-end="url(#arrow)"/>
-    <path d="M400 330C450 385 465 395 500 400" stroke="#0f766e" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
-    <path d="M800 239C850 260 870 290 905 320" stroke="#0f766e" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
-    <path d="M800 399C850 380 870 360 905 340" stroke="#0f766e" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
-    <path d="M1205 335H1295" stroke="#0f766e" stroke-width="4" marker-end="url(#arrow)"/>
-    <path d="M1410 410C1320 540 1200 585 945 650" stroke="#0f766e" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
-    <path d="M945 660H1060" stroke="#0f766e" stroke-width="4" marker-end="url(#arrow)"/>
-    <path d="M635 660H520" stroke="#0f766e" stroke-width="4" marker-end="url(#arrow)"/>
-    <path d="M245 380C270 565 310 740 500 865" stroke="#0f766e" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <rect x="735" y="1085" width="740" height="170" rx="36" fill="#0f172a"/>
+    <text x="785" y="1150" fill="#67e8f9" font-size="34" font-weight="850">Xiaohongshu Review Queue</text>
+    <text x="785" y="1195" fill="#cbd5e1" font-size="23">Pet-supplies links require human audio/text verification.</text>
+
+    <path d="M535 405H700" stroke="#0f766e" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M535 440C610 530 640 555 700 555" stroke="#0f766e" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+    <path d="M1080 355C1125 380 1140 420 1175 455" stroke="#0f766e" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+    <path d="M1080 555C1125 530 1140 500 1175 475" stroke="#0f766e" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+    <path d="M1325 555V705" stroke="#0f766e" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M1175 790H1085" stroke="#0f766e" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M735 865H615" stroke="#0f766e" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M440 950V1085" stroke="#0f766e" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M535 500C590 780 650 1075 735 1165" stroke="#0f766e" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
   </g>
 </svg>
-

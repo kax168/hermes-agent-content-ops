@@ -1,87 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600" role="img" aria-labelledby="title desc">
   <title id="title">Hermes Agent Content Ops hero image</title>
-  <desc id="desc">A dark AI operations dashboard showing Hermes Agent coordinating scheduled WeChat content and Xiaohongshu research queues.</desc>
+  <desc id="desc">A square hero graphic for a Hermes Agent content operations workflow.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#061622"/>
-      <stop offset="0.45" stop-color="#0b2f3a"/>
+      <stop offset="0.55" stop-color="#0b2f3a"/>
       <stop offset="1" stop-color="#0f766e"/>
     </linearGradient>
     <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#102436" stop-opacity="0.96"/>
-      <stop offset="1" stop-color="#0b1726" stop-opacity="0.96"/>
+      <stop offset="0" stop-color="#102436"/>
+      <stop offset="1" stop-color="#07111f"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#67e8f9"/>
       <stop offset="1" stop-color="#5eead4"/>
     </linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="16" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.29 0 0 0 0 0.93 0 0 0 0 0.84 0 0 0 0.7 0"/>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.055" stroke-width="1"/>
+    <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse">
+      <path d="M54 0H0V54" fill="none" stroke="#ffffff" stroke-opacity="0.055" stroke-width="1"/>
     </pattern>
   </defs>
-  <rect width="1600" height="900" fill="url(#bg)"/>
-  <rect width="1600" height="900" fill="url(#grid)"/>
-  <circle cx="1310" cy="160" r="210" fill="#22d3ee" opacity="0.14" filter="url(#glow)"/>
-  <circle cx="220" cy="760" r="260" fill="#14b8a6" opacity="0.13" filter="url(#glow)"/>
-  <path d="M1060 120C1260 230 1360 385 1450 640" fill="none" stroke="#67e8f9" stroke-opacity="0.18" stroke-width="2"/>
-  <path d="M180 235C380 330 545 430 760 690" fill="none" stroke="#5eead4" stroke-opacity="0.16" stroke-width="2"/>
+  <rect width="1600" height="1600" fill="url(#bg)"/>
+  <rect width="1600" height="1600" fill="url(#grid)"/>
+  <circle cx="1320" cy="220" r="240" fill="#22d3ee" opacity="0.13"/>
+  <circle cx="210" cy="1330" r="320" fill="#14b8a6" opacity="0.14"/>
 
-  <g transform="translate(110 105)">
-    <rect width="1380" height="690" rx="42" fill="#020617" opacity="0.42"/>
-    <rect x="28" y="28" width="1324" height="634" rx="34" fill="url(#card)" stroke="#67e8f9" stroke-opacity="0.22"/>
+  <rect x="120" y="150" width="1360" height="1300" rx="70" fill="#020617" opacity="0.42"/>
+  <rect x="170" y="205" width="1260" height="1190" rx="54" fill="url(#card)" stroke="#67e8f9" stroke-opacity="0.24" stroke-width="3"/>
 
-    <text x="76" y="110" fill="#67e8f9" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="4">HERMES AGENT CHALLENGE</text>
-    <text x="76" y="185" fill="#f8fafc" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="72" font-weight="800">Content Ops Agent</text>
-    <text x="76" y="248" fill="#cbd5e1" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="31">Scheduled AI media workflow for WeChat drafts and research queues</text>
+  <text x="245" y="330" fill="#67e8f9" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="6">HERMES AGENT CHALLENGE</text>
+  <text x="245" y="445" fill="#f8fafc" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="86" font-weight="850">Content Ops Agent</text>
+  <text x="245" y="515" fill="#cbd5e1" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="34">Scheduled AI media workflow</text>
+  <text x="245" y="562" fill="#cbd5e1" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="34">for WeChat drafts and research queues</text>
 
-    <g transform="translate(76 330)">
-      <rect width="340" height="210" rx="28" fill="#081827" stroke="#22d3ee" stroke-opacity="0.35"/>
-      <circle cx="58" cy="58" r="22" fill="#22d3ee" opacity="0.22"/>
-      <text x="92" y="67" fill="#f8fafc" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="28" font-weight="800">07:00</text>
-      <text x="34" y="126" fill="#cbd5e1" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="24">Practical AI tutorial</text>
-      <text x="34" y="164" fill="#94a3b8" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="19">topic research -> draft</text>
-    </g>
+  <g transform="translate(245 690)">
+    <rect width="500" height="250" rx="34" fill="#071525" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="2"/>
+    <circle cx="68" cy="68" r="28" fill="#22d3ee" opacity="0.28"/>
+    <text x="118" y="80" fill="#f8fafc" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="42" font-weight="850">07:00</text>
+    <text x="56" y="154" fill="#e2e8f0" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="30">Practical AI tutorial</text>
+    <text x="56" y="198" fill="#94a3b8" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="22">topic research -> draft</text>
+  </g>
 
-    <g transform="translate(456 330)">
-      <rect width="340" height="210" rx="28" fill="#081827" stroke="#5eead4" stroke-opacity="0.35"/>
-      <circle cx="58" cy="58" r="22" fill="#5eead4" opacity="0.22"/>
-      <text x="92" y="67" fill="#f8fafc" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="28" font-weight="800">18:00</text>
-      <text x="34" y="126" fill="#cbd5e1" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="24">Trend / opinion piece</text>
-      <text x="34" y="164" fill="#94a3b8" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="19">layout -> API draft box</text>
-    </g>
+  <g transform="translate(855 690)">
+    <rect width="500" height="250" rx="34" fill="#071525" stroke="#5eead4" stroke-opacity="0.45" stroke-width="2"/>
+    <circle cx="68" cy="68" r="28" fill="#5eead4" opacity="0.28"/>
+    <text x="118" y="80" fill="#f8fafc" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="42" font-weight="850">18:00</text>
+    <text x="56" y="154" fill="#e2e8f0" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="30">Trend / opinion piece</text>
+    <text x="56" y="198" fill="#94a3b8" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="22">layout -> API draft box</text>
+  </g>
 
-    <g transform="translate(836 330)">
-      <rect width="420" height="210" rx="28" fill="#081827" stroke="#99f6e4" stroke-opacity="0.28"/>
-      <circle cx="58" cy="58" r="22" fill="#99f6e4" opacity="0.2"/>
-      <text x="92" y="67" fill="#f8fafc" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="28" font-weight="800">Review Queue</text>
-      <text x="34" y="126" fill="#cbd5e1" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="24">Xiaohongshu pet supplies</text>
-      <text x="34" y="164" fill="#94a3b8" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="19">human-in-the-loop checks</text>
-    </g>
+  <g transform="translate(245 1010)">
+    <rect width="1110" height="175" rx="36" fill="#071525" stroke="#99f6e4" stroke-opacity="0.28" stroke-width="2"/>
+    <text x="55" y="72" fill="#67e8f9" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="36" font-weight="850">Xiaohongshu Review Queue</text>
+    <text x="55" y="120" fill="#cbd5e1" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="25">Pet-supplies links stay human-verified before saving</text>
+  </g>
 
-    <g transform="translate(77 600)">
-      <rect width="240" height="42" rx="21" fill="url(#accent)" opacity="0.95"/>
-      <text x="28" y="29" fill="#042f2e" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="18" font-weight="800">Hermes cron</text>
-    </g>
-    <g transform="translate(342 600)">
-      <rect width="250" height="42" rx="21" fill="#0f172a" stroke="#67e8f9" stroke-opacity="0.28"/>
-      <text x="28" y="29" fill="#e2e8f0" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="18" font-weight="700">persistent skills</text>
-    </g>
-    <g transform="translate(620 600)">
-      <rect width="238" height="42" rx="21" fill="#0f172a" stroke="#67e8f9" stroke-opacity="0.28"/>
-      <text x="28" y="29" fill="#e2e8f0" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="18" font-weight="700">WeChat API</text>
-    </g>
-    <g transform="translate(886 600)">
-      <rect width="276" height="42" rx="21" fill="#0f172a" stroke="#67e8f9" stroke-opacity="0.28"/>
-      <text x="28" y="29" fill="#e2e8f0" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="18" font-weight="700">safe draft-first UX</text>
-    </g>
+  <g transform="translate(245 1255)">
+    <rect width="270" height="58" rx="29" fill="url(#accent)"/>
+    <text x="44" y="38" fill="#042f2e" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="24" font-weight="850">Hermes cron</text>
+    <rect x="310" width="300" height="58" rx="29" fill="#0f172a" stroke="#67e8f9" stroke-opacity="0.35"/>
+    <text x="352" y="38" fill="#e2e8f0" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="24" font-weight="800">persistent skills</text>
+    <rect x="650" width="250" height="58" rx="29" fill="#0f172a" stroke="#67e8f9" stroke-opacity="0.35"/>
+    <text x="695" y="38" fill="#e2e8f0" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="24" font-weight="800">WeChat API</text>
+    <rect x="940" width="270" height="58" rx="29" fill="#0f172a" stroke="#67e8f9" stroke-opacity="0.35"/>
+    <text x="982" y="38" fill="#e2e8f0" font-family="Avenir Next, Helvetica, Arial, sans-serif" font-size="24" font-weight="800">draft-first UX</text>
   </g>
 </svg>
-
