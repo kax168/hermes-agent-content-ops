@@ -2,7 +2,7 @@
 
 This is a submission package for the DEV Hermes Agent Challenge, Build With Hermes Agent prompt.
 
-![Hermes Agent Content Ops hero](assets/hero.svg)
+![Hermes Agent Content Ops hero](assets/hero.png)
 
 The project turns Hermes Agent into a small content-operations system for a Chinese AI/cross-border business media account. It runs scheduled research, topic selection, article generation, WeChat-safe layout, cover creation, and WeChat Official Account draft creation twice a day. It also prepares a daily Xiaohongshu review queue for pet-supplies affiliate video research.
 
@@ -27,7 +27,7 @@ Hermes is useful here because this is not a single chat completion. It is an ope
 
 ## Architecture
 
-![Hermes Agent Content Ops architecture](assets/architecture.svg)
+![Hermes Agent Content Ops architecture](assets/architecture.png)
 
 ```mermaid
 flowchart TD

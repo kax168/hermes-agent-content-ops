@@ -6,7 +6,7 @@ tags: hermesagentchallenge, devchallenge, agents
 
 *This is a submission for the [Hermes Agent Challenge](https://dev.to/challenges/hermes-agent-2026-05-15).*
 
-![Hermes Agent Content Ops hero](https://raw.githubusercontent.com/kax168/hermes-agent-content-ops/main/assets/hero.svg)
+![Hermes Agent Content Ops hero](https://raw.githubusercontent.com/kax168/hermes-agent-content-ops/main/assets/hero.png)
 
 ## What I Built
 
@@ -28,7 +28,7 @@ I also added a second operational workflow: a daily Xiaohongshu research queue f
 
 ## Demo
 
-![Hermes Agent Content Ops architecture](https://raw.githubusercontent.com/kax168/hermes-agent-content-ops/main/assets/architecture.svg)
+![Hermes Agent Content Ops architecture](https://raw.githubusercontent.com/kax168/hermes-agent-content-ops/main/assets/architecture.png)
 
 The WeChat pipeline produces a complete local article package for each run:
 
