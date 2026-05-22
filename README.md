@@ -98,5 +98,22 @@ The Build With Hermes Agent prompt asks for something useful or creative where H
 ## Files In This Submission Package
 
 - `dev-post.md`: English DEV article draft using the challenge template.
+- `dev-post-finish-up.md`: GitHub Finish-Up-A-Thon article draft.
 - `architecture.mmd`: Mermaid architecture diagram source.
 - `submission-checklist.md`: Steps before publishing the DEV submission.
+- `BEFORE_AFTER.md`: Completion arc for the finish-up challenge.
+- `FINISH_UP_A_THON.md`: Notes on what was finished and how it was verified.
+- `scripts/run_finish_audit.py`: Public completion audit.
+- `tests/test_audit.py`: Standard-library test coverage for the audit.
+
+## Finish-Up Verification
+
+Run the public quality gates:
+
+```bash
+python3 -m unittest discover -s tests
+python3 scripts/run_finish_audit.py
+```
+
+The audit writes `finish-audit-report.md` and checks that the public package is
+complete, documented, and free of obvious credential leaks.
