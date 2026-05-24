@@ -1,7 +1,7 @@
 # Finish-Up-A-Thon Completion Audit
 
 Status: **pass**
-Checks: **15**
+Checks: **19**
 
 ## Results
 
@@ -14,9 +14,13 @@ Checks: **15**
 - PASS: file:assets/architecture.png - present
 - PASS: file:BEFORE_AFTER.md - present
 - PASS: file:FINISH_UP_A_THON.md - present
+- PASS: file:WATCH_LAYER.md - present
 - PASS: file:.github/workflows/ci.yml - present
 - PASS: file:.github/copilot-instructions.md - present
+- PASS: file:content_ops/watch_layer.py - present
+- PASS: file:scripts/watch_content_events.py - present
 - PASS: file:tests/test_audit.py - present
+- PASS: file:tests/test_watch_layer.py - present
 - PASS: secret_hygiene - no obvious credential tokens found
 - PASS: before_after_mentions_before - before/after narrative is documented
 - PASS: finish_notes_mentions_copilot - Copilot workflow notes are documented

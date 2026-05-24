@@ -38,6 +38,7 @@ I added:
 - `.github/copilot-instructions.md` for future Copilot-assisted work
 - `BEFORE_AFTER.md` to make the completion arc explicit
 - `FINISH_UP_A_THON.md` to document what changed and why
+- `WATCH_LAYER.md` and `content_ops/watch_layer.py` after a community comment pointed out that cron should not be the whole operating model
 
 The public repo now has a way to answer: is the submission complete, inspectable, and safe to publish?
 
@@ -60,6 +61,7 @@ After:
 - Before/after docs.
 - Copilot-ready instructions.
 - A generated completion report.
+- Event-aware wakeups for source changes, human review approvals, and safe retries.
 
 Run the audit:
 

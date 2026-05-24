@@ -9,6 +9,7 @@ The project turns Hermes Agent into a small content-operations system for a Chin
 ## What It Does
 
 - Runs two scheduled WeChat article pipelines every day: 07:00 and 18:00 Asia/Shanghai.
+- Adds an event-aware watch layer so important changes can wake the agent between cron slots.
 - Searches current web/news/community sources before selecting a topic.
 - Produces a full article package: topic research, Markdown backup, WeChat-safe HTML, local cover image, image plan, and JSON payload.
 - Creates a real WeChat Official Account draft through the official WeChat API.
@@ -33,6 +34,8 @@ Hermes is useful here because this is not a single chat completion. It is an ope
 flowchart TD
     A["Hermes cron scheduler"] --> B["Morning job 07:00"]
     A --> C["Evening job 18:00"]
+    N["Watch layer"] --> D
+    N --> O["Safe retry / validation handoff"]
     B --> D["Topic research collector"]
     C --> D
     D --> E["Article model via configured provider"]
@@ -76,6 +79,21 @@ Each scheduled run writes a package like:
 
 A successful run only counts if the WeChat API returns a real draft media ID. Otherwise the local package is kept for inspection and the run is reported as failed.
 
+## Event-Aware Watch Layer
+
+Cron is still the baseline scheduler, but the project now includes a lightweight
+watch layer for event-driven wakeups. It can detect source research changes,
+human review approvals, and WeChat API failures, then decide whether Hermes
+should wake for revalidation or a safe retry.
+
+Run the sample watcher:
+
+```bash
+python3 scripts/watch_content_events.py path/to/content-package --out watch-report.json
+```
+
+See `WATCH_LAYER.md` for the event model.
+
 ## Safety Boundaries
 
 - No credential printing.
@@ -103,8 +121,11 @@ The Build With Hermes Agent prompt asks for something useful or creative where H
 - `submission-checklist.md`: Steps before publishing the DEV submission.
 - `BEFORE_AFTER.md`: Completion arc for the finish-up challenge.
 - `FINISH_UP_A_THON.md`: Notes on what was finished and how it was verified.
+- `WATCH_LAYER.md`: Event-aware wakeup model inspired by community feedback.
 - `scripts/run_finish_audit.py`: Public completion audit.
+- `scripts/watch_content_events.py`: Public watch-layer sample.
 - `tests/test_audit.py`: Standard-library test coverage for the audit.
+- `tests/test_watch_layer.py`: Tests for event-aware wake decisions.
 
 ## Finish-Up Verification
 

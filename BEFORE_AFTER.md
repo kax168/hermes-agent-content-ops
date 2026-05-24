@@ -25,10 +25,12 @@ The finish-up pass turned the repo into a more complete, inspectable package:
 - Added Copilot instructions so future AI-assisted edits respect the project
   boundaries.
 - Added this before/after document so judges can see the completion arc.
+- Added an event-aware watch layer so the agent can wake on source changes,
+  human review approvals, and safe retry events instead of relying on cron
+  alone.
 
 ## Completion Arc
 
 The project moved from "cool demo package" to "shippable public artifact." It
 now has a repeatable quality gate, automated verification, and documentation
 that explains what changed.
-

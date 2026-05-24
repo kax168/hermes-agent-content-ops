@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-05-24T02:52:54.681891+00:00",
+  "wakeAgent": true,
+  "nextAction": "wake_agent",
+  "events": [
+    {
+      "kind": "source_changed",
+      "path": "topic_research.md",
+      "reason": "topic research changed; agent should re-evaluate freshness and angle",
+      "severity": "info"
+    }
+  ]
+}

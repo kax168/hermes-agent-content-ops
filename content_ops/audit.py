@@ -20,9 +20,13 @@ REQUIRED_FILES = [
 FINISHED_FILES = [
     "BEFORE_AFTER.md",
     "FINISH_UP_A_THON.md",
+    "WATCH_LAYER.md",
     ".github/workflows/ci.yml",
     ".github/copilot-instructions.md",
+    "content_ops/watch_layer.py",
+    "scripts/watch_content_events.py",
     "tests/test_audit.py",
+    "tests/test_watch_layer.py",
 ]
 
 

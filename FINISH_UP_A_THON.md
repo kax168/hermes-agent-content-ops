@@ -20,6 +20,8 @@ The finish-up work added:
 - GitHub Actions CI.
 - Copilot repository instructions.
 - A before/after narrative.
+- An event-aware watch layer inspired by community feedback on the first DEV
+  post.
 
 ## How GitHub Copilot Fit Into The Workflow
 
@@ -45,7 +47,7 @@ Run:
 ```bash
 python -m pytest
 python scripts/run_finish_audit.py
+python scripts/watch_content_events.py path/to/content-package
 ```
 
 The audit writes `finish-audit-report.md`.
-
