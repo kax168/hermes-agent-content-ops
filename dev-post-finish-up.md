@@ -42,6 +42,39 @@ I added:
 
 The public repo now has a way to answer: is the submission complete, inspectable, and safe to publish?
 
+### Update after community feedback
+
+After publishing the first version, Harpinder left a useful comment: the system should not rely only on cron. A real content operations agent should also have a watch layer that can wake on source changes, human review events, or safe retry conditions.
+
+I agreed, so I added a lightweight event-aware layer:
+
+- `content_ops/watch_layer.py`
+- `scripts/watch_content_events.py`
+- `WATCH_LAYER.md`
+- `tests/test_watch_layer.py`
+- `examples/watch-report.json`
+
+Cron still owns the 07:00 and 18:00 rhythm, but the watch layer now models event-based wakeups for changed research, approved human review, and WeChat draft upload failures.
+
+Example output:
+
+```json
+{
+  "wakeAgent": true,
+  "nextAction": "wake_agent",
+  "events": [
+    {
+      "kind": "source_changed",
+      "path": "topic_research.md",
+      "reason": "topic research changed; agent should re-evaluate freshness and angle",
+      "severity": "info"
+    }
+  ]
+}
+```
+
+This made the project feel much less like "a cron script" and much more like an event-aware agent workflow.
+
 ## Before & After
 
 Before:
