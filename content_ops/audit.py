@@ -9,6 +9,11 @@ import re
 
 REQUIRED_FILES = [
     "README.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "CHANGELOG.md",
+    ".env.example",
     "dev-post.md",
     "submission-checklist.md",
     "scripts/wechat_pipeline_sample.py",
@@ -86,6 +91,18 @@ def check_docs_quality(root: Path) -> list[AuditResult]:
     before_after = root / "BEFORE_AFTER.md"
     finish = root / "FINISH_UP_A_THON.md"
     checks = [
+        (
+            "readme_mentions_license",
+            (root / "README.md").exists()
+            and "## License" in (root / "README.md").read_text(encoding="utf-8"),
+            "license is linked from the README",
+        ),
+        (
+            "security_has_private_reporting_guidance",
+            (root / "SECURITY.md").exists()
+            and "private" in (root / "SECURITY.md").read_text(encoding="utf-8").lower(),
+            "security policy includes private reporting guidance",
+        ),
         (
             "before_after_mentions_before",
             before_after.exists() and "Before" in before_after.read_text(encoding="utf-8"),

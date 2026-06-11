@@ -1,10 +1,37 @@
-# Hermes Agent Content Ops: Autonomous WeChat + Research Queue
+# Hermes Agent Content Ops
 
-This is a submission package for the DEV Hermes Agent Challenge, Build With Hermes Agent prompt.
+An open-source reference implementation for safe, scheduled AI content
+operations. It combines recurring research, draft generation, event-aware
+wakeups, package validation, and human review gates for publishing workflows.
 
 ![Hermes Agent Content Ops hero](assets/hero.png)
 
-The project turns Hermes Agent into a small content-operations system for a Chinese AI/cross-border business media account. It runs scheduled research, topic selection, article generation, WeChat-safe layout, cover creation, and WeChat Official Account draft creation twice a day. It also prepares a daily Xiaohongshu review queue for pet-supplies affiliate video research.
+The included implementation uses WeChat Official Account drafts and a
+Xiaohongshu research queue as concrete examples. The watch layer and audit
+helpers are platform-independent building blocks that can be adapted to other
+content systems.
+
+The repository began as a DEV Hermes Agent Challenge submission. It is now
+maintained as a reusable public project; the original submission notes remain
+in the repository as project history.
+
+## Quick Start
+
+Requirements:
+
+- Python 3.10 or newer
+- No third-party Python packages for the public samples and tests
+
+```bash
+git clone https://github.com/kax168/hermes-agent-content-ops.git
+cd hermes-agent-content-ops
+python3 -m unittest discover -s tests
+python3 scripts/run_finish_audit.py
+python3 scripts/watch_content_events.py examples/watch-package \
+  --out examples/watch-report.json
+```
+
+The sample commands do not publish content or require private credentials.
 
 ## What It Does
 
@@ -62,6 +89,10 @@ The private working installation uses:
 
 Private credentials are stored in `~/.hermes/.env` and are not included in this package.
 
+Copy `.env.example` into your deployment environment only when connecting the
+samples to real services. Keep auto-publishing disabled until your own review
+and rollback controls are in place.
+
 ## WeChat Pipeline Output
 
 Each scheduled run writes a package like:
@@ -104,7 +135,10 @@ See `WATCH_LAYER.md` for the event model.
 
 ## Challenge Fit
 
-The Build With Hermes Agent prompt asks for something useful or creative where Hermes performs real work at the heart of the project. This build uses Hermes as the operating layer for a recurring content business workflow: planning, tool use, memory, scheduling, API execution, and status reporting.
+The original Build With Hermes Agent prompt asked for something useful or
+creative where Hermes performs real work at the heart of the project. This
+build uses Hermes as the operating layer for a recurring content workflow:
+planning, tool use, memory, scheduling, API execution, and status reporting.
 
 ## Judging Criteria Mapping
 
@@ -138,3 +172,17 @@ python3 scripts/run_finish_audit.py
 
 The audit writes `finish-audit-report.md` and checks that the public package is
 complete, documented, and free of obvious credential leaks.
+
+## Project Governance
+
+- Bug reports and feature requests: use GitHub Issues.
+- Contributions: see [CONTRIBUTING.md](CONTRIBUTING.md).
+- Security reports: follow [SECURITY.md](SECURITY.md).
+- Release history: see [CHANGELOG.md](CHANGELOG.md).
+
+Maintainer decisions prioritize credential safety, draft-first publishing,
+inspectable artifacts, and human review for ambiguous or irreversible actions.
+
+## License
+
+Licensed under the MIT License. See [LICENSE](LICENSE).

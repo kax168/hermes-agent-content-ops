@@ -1,4 +1,4 @@
-name: Content Ops Finish-Up Audit
+name: Content Ops CI
 
 on:
   push:
